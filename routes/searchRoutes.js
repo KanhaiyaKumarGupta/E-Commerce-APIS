@@ -5,9 +5,9 @@ router.use(bodyParser.urlencoded({ extended: false }))
 
 const searchController = require('../controllers/searchController')
 
-router.get('/byproductName', searchController.searchProductByName)
-router.get('/productDescription', searchController.searchProductByDescription)
-router.get('/byvariantname',searchController.searchProductVariantname)
+router.post('/byproductName', searchController.searchProductByName)
+router.post('/productDescription', searchController.searchProductByDescription)
+router.post('/byvariantname',searchController.searchProductVariantname)
 
 
 module.exports = router
